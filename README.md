@@ -146,9 +146,10 @@ $:kubectl uncordon k8s-worker1
 ![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/8ddf2d5e-99ee-458b-8210-7e00eff2daed)
 
 ## Backup etcd data?
-![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/5d8cc0f9-ca3b-4f6b-ac4f-a37a69f9326f)
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/151fc5a2-597f-43eb-8f9b-5136faa3e52f)
 
 ## Restore etcd data?
-![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/b8db73a6-731a-4888-af95-79efabe3e134)
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/15656be2-1401-4b57-9f12-11006a457de7)
+
 
 
