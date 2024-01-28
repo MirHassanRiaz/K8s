@@ -91,3 +91,5 @@ $:kubectl get pods -n mobile-gateway
 ## List all namespaces
 $:kubectl get pods --all-namespaces
 
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/aba2a7ca-3fa1-41e3-8c14-535a2c16e5d9)
+
