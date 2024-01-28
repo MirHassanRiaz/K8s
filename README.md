@@ -93,3 +93,62 @@ $:kubectl get pods --all-namespaces
 
 ![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/aba2a7ca-3fa1-41e3-8c14-535a2c16e5d9)
 
+## Draining a Node
+$:kubectl drain <node name>
+
+## Ignore Daemonsets(pods tied to each node)
+$:kubectl drain <node name> --ignore-daemonsets
+
+## Check which pods are assigned to each node to plain draining of workder nodes
+$:kubectl get pods -o wide
+
+## Uncordon (brining a worker node from maintenance back to cluster)
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/d1bf79d1-f7d9-40c2-b4b4-87694ba0d842)
+
+## Deleting deployment
+$:kubectl delete deployment my-deployment
+
+# Upgrade Kubernettes cluster with Kubeadm
+
+## Draining a Node
+$:kubectl drain k8s-control --ignore-daemonsets
+
+## Removing held packages in Kubernetes
+$:sudo apt-get install -y --allow-change-held-packages kubeadm=1.27.2-00
+
+## Kubeadm upgrade plan for upgrading all components
+$:sudo kubeadm upgrade apply v1.27.2
+
+## Upgrade kubetctl
+$:sudo apt-get update && \
+$:sudo apt-get install -y --allow-change-held-packages kubelet=1.27.2-00 kubectl=1.27.2-00
+
+## Reload Kubernettes services 
+$:sudo systemctl daemon-reload
+$:sudo systemctl restart kubelet
+$:kubectl uncordon k8s-control
+
+## Validate the upgraded nodes and their versions
+$:kubectl get nodes
+
+## Upgrade Kubernetes workers
+$:kubectl drain k8s-worker1 --ignore-daemonsets --force
+$:sudo apt-get update && \
+$:sudo apt-get install -y --allow-change-held-packages kubeadm=1.27.2-00
+$:sudo kubeadm upgrade node
+$:sudo apt-get update && \
+$:sudo apt-get install -y --allow-change-held-packages kubelet=1.27.2-00 kubectl=1.27.2-00
+$:sudo systemctl daemon-reload
+$:sudo systemctl restart kubelet
+$:kubectl uncordon k8s-worker1
+
+## What is etcd?
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/8ddf2d5e-99ee-458b-8210-7e00eff2daed)
+
+## Backup etcd data?
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/5d8cc0f9-ca3b-4f6b-ac4f-a37a69f9326f)
+
+## Restore etcd data?
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/b8db73a6-731a-4888-af95-79efabe3e134)
+
+
