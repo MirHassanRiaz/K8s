@@ -56,3 +56,12 @@ etcd:
 Description: etcd is a distributed key-value store that stores the entire configuration and state of the cluster.
 Analogy: Picture it as the central library where all information about the cluster's books (configuration and state) is stored.
 These control plane components work together to maintain the desired state of the cluster, handle user requests, and ensure that applications run efficiently. The control plane is like the central nervous system, coordinating and directing the activities of the Kubernetes cluster.
+
+# Commands
+
+# Command to list down all the PODS in Kubernettes
+$:kubectl get pods --namespace kube-system
+$:kubectl get pods --all-namespaces
+
+# Command to create namespace
+$:kubectl create namespace my-namespace
