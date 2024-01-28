@@ -59,11 +59,30 @@ These control plane components work together to maintain the desired state of th
 
 # Commands
 
-# Command to list down all the PODS in Kubernettes System
+## To list down all the PODS in Kubernettes System
 $:kubectl get pods --namespace kube-system
 
-# Command to list down all namespaces and PODS
-kubectl get pods --all-namespaces
+## To list down all namespaces and PODS
+$:kubectl get pods --all-namespaces
 
-# Command to create namespace
-$:kubectl create namespace my-namespace
+## To create namespace
+$:kubectl create namespace dev
+
+## To list namespaces
+$:kubectl get namespace
+
+## To list pods
+$:kubectl get pods
+
+## List kubectl namespace output to a file
+$:kubectl get namespace > /home/cloud_user/namespaces.txt
+
+## List kubectl namespace output to a file
+$:kubectl get pods -n mobile-gateway
+
+## List pods in each individual namespace
+$:kubectl get pods -n mobile-gateway
+
+## List all namespaces
+$:kubectl get pods --all-namespaces
+
