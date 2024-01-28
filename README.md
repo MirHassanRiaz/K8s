@@ -93,6 +93,14 @@ $:kubectl get pods --all-namespaces
 
 ![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/aba2a7ca-3fa1-41e3-8c14-535a2c16e5d9)
 
+# High Availability Designs
+
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/92b15c25-05c5-41d8-830e-18033be961fd)
+
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/ef51660e-d438-4ea4-be35-429c2570724e)
+
+![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/fe4ae186-5a2a-4804-a19f-95ef1da18d25)
+
 ## Draining a Node
 $:kubectl drain <node name>
 
@@ -151,5 +159,9 @@ $:kubectl uncordon k8s-worker1
 ## Restore etcd data?
 ![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/15656be2-1401-4b57-9f12-11006a457de7)
 
+### Which tool(s) allow you to create Kubernetes clusters?
+kubeadm: allows you to build Kubernetes clusters.
+
+Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node. Kubernetes Documentation: Using Minikube to Create a Cluster.
 
 
