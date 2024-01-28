@@ -2,6 +2,9 @@
 
 ![image](https://github.com/MirHassanRiaz/K8s/assets/53171887/6831024e-38ae-40da-9ab7-705c45683dbb)
 
+Kubernetes
+Kubernetes provides tools and functionality around orchestrating container workloads. Hence, Container orchestration.
+
 Node:
 Description: Think of a node as a worker machine in your Kubernetes cluster. It's where your applications run.
 Analogy: Nodes are like individual workers in a factory, each responsible for carrying out specific tasks.
